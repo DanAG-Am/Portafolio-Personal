@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+<meta charset = "UTF-8">
+<meta http-equiv ="X-UA-Compatible" content = "IE=edge">
+<meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+<title>Personal Portfolio Website</title>
+
+<link rel = "stylesheet" href = "style.css">
+<script src="https://kit.fontawesome.com/6a6571c932.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id = "header">
+        <div class="container">
+            <nav>
+                <img src = "logo.png" class = "logo">
+                <ul id="sidemenu">
+                    <li><a href = "#header"> Principal </a> </li>
+                    <li><a href = "#about"> Acerca de mí </a> </li>
+                    <li><a href = "#services"> Habilidades y servicios</a> </li>
+                    <li><a href = "#portfolio"> Portafolio </a> </li>
+                    <li><a href = "#contact"> Contacto </a> </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Ingeniería en tecnologías computacionales</p>
+                <h1>Hola, yo soy </h1>
+                <h1>Amilka Lopez</h1>
+            </div>
+        </div>
+    </div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src = "me.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title">Acerca de mí</h1>
+                <p>Como estudiante de tercer semestre de Ciencias de la Computación, busco activamente oportunidades para aplicar mis habilidades y conocimientos en programación, diseño de software, soporte técnico y ciberseguridad. Competente en Python y SQL para análisis y limpieza de datos, aporto experiencia en herramientas como Microsoft Office 365, R Studio, Matlab, VS Code, Google Colab y Spyder. Además, utilizo C++, HTML y CSS para proyectos de ingeniería de software y desarrollo web. Con una cartera sólida que abarca más de 10 proyectos de programación, estoy ansioso por contribuir a iniciativas impactantes en el campo de la tecnología.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experiencia/p>
+                    <p class="tab-links"onclick="opentab('education and achievements')">Formación académica</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Análisis de datos</span><br>Análisis de datos utilizando R, SQL y Python. Encontrar tendencias e interpretar información para una adecuada toma de decisiones. </li>
+                        <li><span>UX/UI</span><br>Html y CSS para un diseño de interfaz web creativo y coherente. Experiencia con wireframes, bases de datos y sistemas de control de versiones.</li>
+                        <li><span>Simulación computacional</span><br>Representar simulaciones basadas en física y química utilizando Python. Simulaciones de partículas Monte Carlo y Brownianas. Uso de programación paralela para mejorar el rendimiento del código.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Análisis de datos</span><br>Interpretaciones de casos de estudio</li>
+                        <li><span>UX/UI</span><br>Aplicaciones de análisis de tendencias y estudios de casos.</li>
+                        <li><span>Simulación computacional</span><br> Simulación del movimiento de partículas brownianas siguiendo enfoques teóricos y analíticos. </li>
+                        <li><span>Implementaciones IA</span><br>Aprendizaje automático mediante redes neuronales y modelos de Adam.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education and achievements">
+                    <ul>
+                        <li><span>Certificados de carrera google</span><br>Análisis de datos y soporte técnico. </li>
+                        <li><span>Participando en</span><br>club de programación, grupo de estudiantes de ingeniería (como presidente), centro comunitario que brinda clases de computación avanzada.</li>
+                        <li><span>Gerente de proyecto como vicepresidenta de un grupo de estudiantes</span><br>Asumí el rol de capacitar a organizaciones socias que impartían clases STEAM. Desarrollé el material para la clase de tecnología. </li>
+                        <li><span>Tecnologico de Monterrey</span><br>Promedio acumulado de 90.</li>
+                    </ul>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class = "sub-title">Servicios</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Diseño Web</h2>
+                <p>Desde configurar el sitio web hasta seguir las convenciones de seguridad para garantizar una experiencia positiva para el cliente.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Simulación por computadora y aprendizaje automático.</h2>
+                <p>Entrenar un modelo para predecir en función de las tendencias encontradas en un marco de datos. </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-terminal"></i>
+                <h2>Desarrollo completo</h2>
+                <p>Uso de varios lenguajes de programación para el desarrollo de aplicaciones, web y software.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+<div class="container">
+    <h1 class = "sub-title">Mi trabajo</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="brownian.jpeg">
+            <div class="layer">
+                <h3>Análisis de datos y modelado computacional.</h3>
+                <p>Una simulación de movimiento browniano con Python y CUDA analizó las interacciones entre múltiples partículas bajo fuerzas tanto deterministas como estocásticas. El uso de CUDA aceleró los cálculos al paralelizar tareas en la GPU.</p>
+                <a href="https://github.com/DanAG-Am/Brownian-Particle-Simulation"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="ux.png">
+            <div class="layer">
+                <h3>Diseño y desarrollo de sitios web.</h3>
+                <p>Uso de CSS y html para rediseñar sitios web, priorizando y mejorando la experiencia del consumidor a través de plataformas interactivas y dinámicas sin obstaculizar la accesibilidad.</p>
+                <a href="https://danag-am.github.io/Talleres-STEAM/STEAM.html"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="neural.png">
+            <div class="layer">
+                <h3>Red neuronal de clasificación del cáncer</h3>
+                <p>Este proyecto implementa una red neuronal utilizando la API Keras de TensorFlow para realizar una clasificación binaria de datos de diagnóstico de cáncer.</p>
+                <a href="https://github.com/DanAG-Am/Cancer-Classification-Neural-Network"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="https://colab.research.google.com/drive/1rHK0-ZI7ietJ0Ef0nMFd2xKxvU6DpYyQ?usp=sharing" class="btn">Ver más</a>
+</div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contacto</h1>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> amilka27lopez@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +52 55 2858 3380</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/DanAG-Am"><i class="fa-brands fa-github"></i></a>
+                    <a href=""></a>
+                </div>
+                <a href="CV.AmilkaDanielaLópezAguilar.pdf" download class="btn btn2">Descargar CV</a>
+            </div>
+            <div class="contact-right">
+                
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Amilka.</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html> 
